@@ -1,0 +1,26 @@
+{
+  "name": "simpleAPI",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Enrique Y. German Totosaus",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --detectOpenHandles --runInBand --testTimeout=200000 --forceExit",
+    "test-detectOpenHandles": "jest --detectOpenHandles",
+    "seed-database": "node -e 'require(\"./scripts/seedDB\").init(); process.exit(0);'",
+    "nodemon": "nodemon index.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "pg": "^8.6.0"
+  },
+  "devDependencies": {
+    "faker": "^5.5.3",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "randexp": "^0.5.3",
+    "supertest": "^6.1.3"
+  }
+}
